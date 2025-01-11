@@ -14,7 +14,10 @@ const Footer = () => {
         </p>
         <div className="mt-4 flex justify-center items-center space-x-2">
           <Mail className="w-4 h-4" />
-          <p className="text-xs md:text-sm">contact@shaileshandneha.com</p>
+          <p className="text-xs md:text-sm">jaydholariy07@gmail.com</p>
+        </div>
+        <div className="mt-2 flex justify-center items-center space-x-2">
+        <p className="text-xs md:text-sm">Made with love by Jay Dholariya</p>
         </div>
       </div>
     </footer>

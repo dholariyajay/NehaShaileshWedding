@@ -12,15 +12,15 @@ const ResponsiveNav = () => {
     { id: 'details', href: '#details', label: 'Details' },
 ];
 
-  useEffect(() => {
+useEffect(() => {
     const handleScroll = () => {
       // Update nav background
       setIsScrolled(window.scrollY > 50);
-
+  
       // Update active section
       const sections = navLinks.map(link => document.getElementById(link.id));
       const scrollPosition = window.scrollY + 100;
-
+  
       const currentSection = sections.reduce((current, section) => {
         if (!section) return current;
         
@@ -32,13 +32,13 @@ const ResponsiveNav = () => {
         }
         return current;
       }, '');
-
+  
       setActiveSection(currentSection);
     };
-
+  
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navLinks]); // Added navLinks to dependency array
 
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
