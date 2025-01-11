@@ -4,7 +4,7 @@ import OurStory from './components/OurStory';
 import EventDetails from './components/EventDetails';
 import PreWeddingGallery from './components/PreWeddingGallery';
 import Footer from './components/Footer';
-import EventsRoadmap from './components/EventsRoadmap';
+//import EventsRoadmap from './components/EventsRoadmap';
 
 function App() {
   return (
