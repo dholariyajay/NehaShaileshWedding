@@ -1,7 +1,7 @@
 {
   "name": "wedding-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://dholariyajay.github.io/NehaShaileshWedding",
   "dependencies": {
     "@headlessui/react": "^2.2.0",
